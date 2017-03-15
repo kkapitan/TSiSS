@@ -1,0 +1,38 @@
+@prefix tsiss <http://semantic.cs.put.poznan.pl/dokuwiki/>
+@prefix rdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+tsiss:SOS1 a tsiss:Sos_pomidorowy .
+tsiss:SOS1 tsiss:maLokalizację Kotlin .
+tsiss:SOS1 tsiss:maStan _:s1 .
+_:s1 tsiss:maJednostkę litr .
+_:s1 tsiss:maWartość 200 .
+
+tsiss:S2 a tsiss:Sos_pomidorowy .
+tsiss:S2 tsiss:maLokalizację Kotlin .
+tsiss:S2 tsiss:maStan _:s2 .
+_:s2 tsiss:maJednostkę litr .
+_:s2 tsiss:maWartość 100 .
+
+tsiss:SOS3 a tsiss:Sos_pomidorowy .
+tsiss:SOS3 tsiss:maLokalizację Kotlin .
+tsiss:SOS3 tsiss:maStan _:s3 .
+_:s3 tsiss:maJednostkę litr .
+_:s3 tsiss:maWartość 50 .
+
+tsiss:MAK2 a tsiss:Mąka .
+tsiss:MAK2 tsiss:maLokalizację Lublin .
+tsiss:MAK2 tsiss:maStan _:s4 .
+_:s4 tsiss:maJednostkę kg .
+_:s4 tsiss:maWartość 250 .
+
+tsiss:MK6 a tsiss:Mąka .
+tsiss:MK6 tsiss:maLokalizację Lublin .
+tsiss:MK6 tsiss:maStan _:s5 .
+_:s5 tsiss:maJednostkę kg .
+_:s5 tsiss:maWartość 500 .
+
+tsiss:DR2 a tsiss:Drożdże .
+tsiss:DR2 tsiss:maLokalizację Poznań .
+tsiss:DR2 tsiss:maStan _:s6 .
+_:s6 tsiss:maJednostkę kg .
+_:s6 tsiss:maWartość 10 .
