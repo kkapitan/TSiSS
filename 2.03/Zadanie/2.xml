@@ -1,7 +1,14 @@
-@prefix tsiss: <http://semantic.cs.put.poznan.pl/dokuwiki/#> 
-@prefix dc: <http://purl.org/dc/elements/1.1/> 
-@prefix rdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-
-tsiss:Produkt a _:product . 
-_:product tsiss:maLokalizację tsiss:Kotlin .
-_:product a tsiss:Sos_pomidorowy .
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:tsiss="http://semantic.cs.put.poznan.pl/dokuwiki/#"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://semantic.cs.put.poznan.pl/dokuwiki/#Produkt">
+    <dc:creator>
+      <tsiss:Sos_pomidorowy rdf:nodeID="f12ae9ff3f80e45eb8ce891fd7dfb8f1bb1">
+        <tsiss:maLokalizacje rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#Kotlin"/>
+      </tsiss:Sos_pomidorowy>
+    </dc:creator>
+  </rdf:Description>
+</rdf:RDF>
