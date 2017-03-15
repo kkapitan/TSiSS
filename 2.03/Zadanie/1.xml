@@ -1,38 +1,60 @@
-@prefix tsiss <http://semantic.cs.put.poznan.pl/dokuwiki/>
-@prefix rdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-
-tsiss:SOS1 a tsiss:Sos_pomidorowy .
-tsiss:SOS1 tsiss:maLokalizację Kotlin .
-tsiss:SOS1 tsiss:maStan _:s1 .
-_:s1 tsiss:maJednostkę litr .
-_:s1 tsiss:maWartość 200 .
-
-tsiss:S2 a tsiss:Sos_pomidorowy .
-tsiss:S2 tsiss:maLokalizację Kotlin .
-tsiss:S2 tsiss:maStan _:s2 .
-_:s2 tsiss:maJednostkę litr .
-_:s2 tsiss:maWartość 100 .
-
-tsiss:SOS3 a tsiss:Sos_pomidorowy .
-tsiss:SOS3 tsiss:maLokalizację Kotlin .
-tsiss:SOS3 tsiss:maStan _:s3 .
-_:s3 tsiss:maJednostkę litr .
-_:s3 tsiss:maWartość 50 .
-
-tsiss:MAK2 a tsiss:Mąka .
-tsiss:MAK2 tsiss:maLokalizację Lublin .
-tsiss:MAK2 tsiss:maStan _:s4 .
-_:s4 tsiss:maJednostkę kg .
-_:s4 tsiss:maWartość 250 .
-
-tsiss:MK6 a tsiss:Mąka .
-tsiss:MK6 tsiss:maLokalizację Lublin .
-tsiss:MK6 tsiss:maStan _:s5 .
-_:s5 tsiss:maJednostkę kg .
-_:s5 tsiss:maWartość 500 .
-
-tsiss:DR2 a tsiss:Drożdże .
-tsiss:DR2 tsiss:maLokalizację Poznań .
-tsiss:DR2 tsiss:maStan _:s6 .
-_:s6 tsiss:maJednostkę kg .
-_:s6 tsiss:maWartość 10 .
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:tsiss="http://semantic.cs.put.poznan.pl/dokuwiki/#"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <tsiss:Sos_pomidorowy rdf:about="http://semantic.cs.put.poznan.pl/dokuwiki/#SOS1">
+    <tsiss:maStan>
+      <rdf:Description rdf:nodeID="f1e13506a4eda4643882ab001c96e5705b1">
+        <tsiss:maWartosc rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#200"/>
+        <tsiss:maJednostke rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#litr"/>
+      </rdf:Description>
+    </tsiss:maStan>
+    <tsiss:maLokalizacje rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#Kotlin"/>
+  </tsiss:Sos_pomidorowy>
+  <tsiss:Sos_pomidorowy rdf:about="http://semantic.cs.put.poznan.pl/dokuwiki/#S2">
+    <tsiss:maLokalizację rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#Kotlin"/>
+    <tsiss:maStan>
+      <rdf:Description rdf:nodeID="f1e13506a4eda4643882ab001c96e5705b2">
+        <tsiss:maJednostkę rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#litr"/>
+        <tsiss:maWartość rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</tsiss:maWartość>
+      </rdf:Description>
+    </tsiss:maStan>
+  </tsiss:Sos_pomidorowy>
+  <tsiss:Maka rdf:about="http://semantic.cs.put.poznan.pl/dokuwiki/#MAK2">
+    <tsiss:maLokalizację rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#Lublin"/>
+    <tsiss:maStan>
+      <rdf:Description rdf:nodeID="f1e13506a4eda4643882ab001c96e5705b4">
+        <tsiss:maJednostkę rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#kg"/>
+        <tsiss:maWartość rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</tsiss:maWartość>
+      </rdf:Description>
+    </tsiss:maStan>
+  </tsiss:Maka>
+  <tsiss:Maka rdf:about="http://semantic.cs.put.poznan.pl/dokuwiki/#MK6">
+    <tsiss:maLokalizację rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#Lublin"/>
+    <tsiss:maStan>
+      <rdf:Description rdf:nodeID="f1e13506a4eda4643882ab001c96e5705b5">
+        <tsiss:maWartość rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</tsiss:maWartość>
+        <tsiss:maJednostkę rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#kg"/>
+      </rdf:Description>
+    </tsiss:maStan>
+  </tsiss:Maka>
+  <tsiss:Drożdże rdf:about="http://semantic.cs.put.poznan.pl/dokuwiki/#DR2">
+    <tsiss:maLokalizacje rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#Poznan"/>
+    <tsiss:maStan>
+      <rdf:Description rdf:nodeID="f1e13506a4eda4643882ab001c96e5705b6">
+        <tsiss:maWartość rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">10</tsiss:maWartość>
+        <tsiss:maJednostkę rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#kg"/>
+      </rdf:Description>
+    </tsiss:maStan>
+  </tsiss:Drożdże>
+  <tsiss:Sos_pomidorowy rdf:about="http://semantic.cs.put.poznan.pl/dokuwiki/#SOS3">
+    <tsiss:maStan>
+      <rdf:Description rdf:nodeID="f1e13506a4eda4643882ab001c96e5705b3">
+        <tsiss:maJednostke rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#litr"/>
+        <tsiss:maWartość rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">50</tsiss:maWartość>
+      </rdf:Description>
+    </tsiss:maStan>
+    <tsiss:maLokalizację rdf:resource="http://semantic.cs.put.poznan.pl/dokuwiki/#Kotlin"/>
+  </tsiss:Sos_pomidorowy>
+</rdf:RDF>
