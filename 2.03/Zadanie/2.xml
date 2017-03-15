@@ -1,0 +1,7 @@
+@prefix tsiss: <http://semantic.cs.put.poznan.pl/dokuwiki/#> 
+@prefix dc: <http://purl.org/dc/elements/1.1/> 
+@prefix rdf <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+tsiss:Produkt a _:product . 
+_:product tsiss:maLokalizację tsiss:Kotlin .
+_:product a tsiss:Sos_pomidorowy .
