@@ -1,0 +1,8 @@
+@prefix tsiss: <http://semantic.cs.put.poznan.pl/dokuwiki/#>.
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+
+tsiss:"Zdrowie" tsiss:twierdzi _:zdanie1 .
+	_:zdanie1 a rdf:Statement ; 
+	rdf:subject tsiss:Mąka_orkiszowa; 
+	rdf:predicate tsiss:jestZdrowsza; 
+	rdf:object tsiss:Mąka_pszenna .
